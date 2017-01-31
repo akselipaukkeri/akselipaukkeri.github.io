@@ -1,3 +1,27 @@
 .navigation {
+background-color: #333;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px
+    right: 0px
+}
 
+.navigation li {
+    display: inline-block;
+    
+}
+.navigation ul {
+    height: 50px;
+    
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover{
+    color: #ff0000;
+    
 }
