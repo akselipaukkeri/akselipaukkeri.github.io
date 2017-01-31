@@ -1,13 +1,13 @@
 
 <!DOCTYPE html> 
 <html>
-<<<<<<< HEAD
+ 
     <head>        
-        <meta charset "UTF-8" />
+        <meta charset= "UTF-8" />
         <meta name= "author" content= "Teemu teekkari" />
         <meta name= "description" content= "A simple web page" />
         <title> Ferrari </title>
-        <link rel="stylesheet" type="text/css" href ="stylesheet.CSS"
+        <link rel="stylesheet" type="text/css" href ="stylesheet.CSS">
     </head>    
         <body>
             <nav class= "navigation">
@@ -40,117 +40,7 @@
     </head>
     <body>
         
-        <h1>BRACKETSIN KÄYTÖN ALOITUS</h1>
-        <h2>Tämä on oppaasi!</h2>
-        
-        <!--
-            TEHTY <3:LLA JA JAVASCRIPTILLÄ
-        -->
-        
-        <p>
-            Tervetuloa käyttämään Bracketsia, nykyaikaista, avoimen lähdekoodin koodieditoria, joka ymmärtää
-            web-suunnittelun. Se on kevyt mutta silti tehokas: koodieditori, joka sulauttaa visuaaliset työkalut suoraan
-            editoriin, niin että saat oikean määrän apua silloin, kun haluat sitä.
-        </p>
-        
-        <!--
-            MIKÄ BRACKETS ON?
-        -->
-        <p>
-            <em>Brackets on erityyppinen editori.</em>
-            Bracketsissa on joitakin ainutlaatuisia ominaisuuksia, kuten pikamuokkaus, reaaliaikainen esikatselu ja
-            muita, joita et voi löytää muista editoreista. Lisäksi Brackets on kirjoitettu JavaSciptillä, HTML:llä ja
-            CSS:llä. Se tarkoittaa, että useimmilla Bracketsin käyttäjistä on riittävät taidot muokata ja laajentaa
-            editoria. Itse asiassa käytämme Bracketsia joka päivä sen itsensä kehitykseen. Oppiaksesi lisää siitä,
-            kuinka käyttää avainominaisuuksia, jatka lukemista.
-        </p>
-        
-        <!--
-            ALOITUS OMIEN TIEDOSTOJESI KANSSA
-        -->
-        
-        <h3>Projektit Bracketsissa</h3>
-        <p>
-            Muokataksesi omaa koodiasi Bracketsia käyttäen voit vain avata tiedostosi sisältävän kansion. Brackets pitää
-            nykyistä avointa kansiota ”projektina”; ominaisuudet, kuten koodivihjeet, esikatselu ja pikamuokkaus,
-            käyttävät vain parhaillaan avoinna olevan kansion tiedostoja.
-        </p>
-        
-        <samp>
-            Heti kun olet valmis luopumaan tästä näyteprojektista ja muokkaamaan omaa koodiasi, voit käyttää vasemman
-            sivupalkin pudotusvalikkoa kansioiden vaihtamiseen. Juuri nyt pudotusvalikossa lukee ”Aloitus”. Tämä on
-            kansio, joka sisältää tiedoston, jota tarkastelet juuri nyt. Avaa oma kansiosi napsauttamalla
-            pudotusvalikkoa ja valitsemalla ”Avaa kansio…”.
-            Voit käyttää pudotusvalikkoa myös myöhemmin vaihtaaksesi takaisin kansioihin, jotka olet avannut aiemmin,
-            sisältäen tämän näyteprojektin.
-        </samp>
-        
-        <!--
-            YHTEYS HTML:N, CSS:N JA JAVASCRIPTIN VÄLILLÄ
-        -->
-        <h3>Pikamuokkaus CSS:lle ja JavaScriptille</h3>
-        <p>
-            Ei lisää dokumenttien välillä vaihtamista tai asiayhteyden hukkaamista. Muokatessasi HTML:ää käytä
-            näppäinyhdistelmää <kbd>Cmd/Ctrl + E</kbd> avataksesi upotetun pikaeditorin, joka näyttää kaiken tiedostoon
-            liittyvän CSS:n. Muokkaa CSS:ääsi, paina <kbd>ESC</kbd>-näppäintä ja olet taas muokkaamassa HTML:ää, tai
-            yksinkertaisesti jätä CSS-säännöt auki, ja niistä tulee osa HTML-editoriasi. Jos painat
-            <kbd>ESC</kbd>-näppäintä pikaeditorin ulkopuolella, ne kaikki sulkeutuvat. Pikaeditori löytää myös LESS- ja
-            SCSS-tiedostoissa määritellyt säännöt, sisältäen sisäkkäiset sellaiset.
-        </p>
-        
-        <samp>
-            Haluatko nähdä sen toiminnassa? Aseta kohdistin alla olevaan <!-- <samp> --> -tägiin ja paina
-            <kbd>Cmd/Ctrl + E</kbd>. Sinun pitäisi nähdä, kun CSS-pikaeditori ilmestyy alapuolelle näyttäen CSS-säännön,
-            joka pätee siihen. Pikamuokkaus toimii toki myös class- ja id-attribuuttien kanssa. Voit käyttää sitä myös
-            LESS- ja SCSS-tiedostojesi kanssa.
-            
-            Voit luoda uusia sääntöjä samalla tavalla. Napsauta yhtä alaosan <!-- <p> --> -tägeistä ja paina
-            <kbd>Cmd/Ctrl + E</kbd>. Sille ei ole sääntöjä juuri nyt, mutta voit napsauttaa Uusi sääntö -painiketta
-            lisätäksesi uuden säännön <!-- <p> --> -tägeille.
-        </samp>
-        
-        <a href="screenshots/quick-edit.png">
-            <img alt="Kuvankaappaus, jossa näkyy CSS:n pikamuokkaus" src="screenshots/quick-edit.png" />
-        </a>
-        
-        <p>
-            Voit käyttää samaa näppäinyhdistelmää muokataksesi myös muita asioita - kuten JavaScriptin funktioita,
-            värejä ja animaatioiden ajoitusfunktioita - ja me lisäämme koko ajan yhä enemmän ominaisuuksia.
-        </p>
-        <p>
-            Toistaiseksi sisäeditorit eivät voi olla sisäkkäin, joten voit käyttää pikamuokkausta vain silloin, kun
-            kohdistin on täyskokoisessa editorissa.
-        </p>
-        
-        <!--
-            ESIKATSELU
-        -->
-        <h3>Esikatsele HTML:n ja CSS:n muutoksia reaaliaikaisesti selaimessa</h3>
-        <p>
-            Tiedäthän sen ”tallenna ja päivitä -tanssin”, jota olemme harrastaneet vuosia? Se, jossa tehdään muutoksia
-            editorissa, painetaan tallenna, vaihdetaan selaimeen ja sitten päivitetään, jotta tulos tulee viimein
-            näkyville? Bracketsissa sinun ei tarvitse harrastaa tätä tanssia.
-        </p>
-        <p>
-            Brackets avaa <em>reaaliaikaisen yhteyden</em> paikalliseen selaimeesi ja vie HTML:n CSS:n päivitykset
-            samalla kun kirjoitat! Saatat olla jo tehnyt jotakin tämän kaltaista selainpohjaisilla työkaluilla, mutta
-            Bracketsin kanssa ei tarvitse kopioida ja liittää lopullista koodia takaisin editoriin. Koodisi suoritetaan
-            selaimessasi, mutta se sijaitsee editorissasi!
-        </p>
-        
-        <h3>Korosta HTML-elementtejä ja CSS-sääntöjä reaaliaikaisesti</h3>
-        <p>
-            Brackets tekee helpoksi nähdä, kuinka muutoksesi HTML:ssä ja CSS:ssä vaikuttavat sivuun. Kun kohdistin on
-            CSS-säännöllä, Brackets korostaa kaikki siihen liittyvät elementit selaimessa. Samalla tavoin muokattaessa
-            HTML-tiedostoa Brackets korostaa vastaavat HTML-elementit selaimessa.
-        </p>
-        
-        <samp>
-            Jos sinulla on Google Chrome asennettuna, voit kokeilla tätä itse. Napsauta Brackets-ikkunan oikeassa
-            yläkulmassa sijaitsevaa salamakuvaketta tai paina <kbd>Cmd/Ctrl + Alt + P</kbd>. Kun esikatselu on käytössä
-            HTML-dokumentissa, kaikkia linkitettyjä CSS-dokumentteja voi muokata reaaliajassa. Kuvake muuttuu harmaasta
-            kultaiseksi, kun Brackets muodostaa yhteyden selaimeesi.
->>>>>>> parent of ebb2129... tein muutoksen
+    
             
             </header>
             <section> 
