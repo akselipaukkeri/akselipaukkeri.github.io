@@ -25,3 +25,16 @@ background-color: #333;
     color: #ff0000;
     
 }
+.blog-post {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    background-color:£1f1f1f;
+    color: #fff;
+    padding: 20px;
+    border-color: #ff0000;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+}
