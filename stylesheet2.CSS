@@ -1,3 +1,8 @@
+body, html {
+    background-color: darkslategrey
+}
+
+
 .navigation {
     text-align: center;
     background-color: #000;
@@ -28,7 +33,7 @@
 .navigation li a:hover {
     color: #518427;
 }
-.h1 {
+h1 {
     text-align: center;
     color: #518427;
 }
