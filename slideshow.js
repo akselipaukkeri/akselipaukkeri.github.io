@@ -40,14 +40,14 @@ function slideshow(){
      
           
  
-    $("#news").fadeOut();
+    $("#news").fadeOut(300,function(){
      $("#news").html("<div class= 'otsikko'> "+
        "<p>" + x[saatana].otsikko+"&nbsp;&nbsp;&nbsp" + x[saatana].date + 
        "</p> <br>" +"<p>" + x[saatana].contents + " </p> </div>");
         $("#news").fadeIn();
         
 
-        
+    })
    
 };
   
@@ -90,7 +90,7 @@ function slideshow(){
          saatana = seuraava(saatana);
         Mytimer();
         
-        },1000);
+        },4000);
              $("#button3").html("Pysäytä");
          
         };
