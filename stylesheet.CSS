@@ -130,6 +130,11 @@ h1 {
     transition: 1s;
     color: #ff0000;
 }
+.video {
+    position: center;
+    margin-top: 200px;
+    
+}
 
 .blog-post {
     width: 50%;
