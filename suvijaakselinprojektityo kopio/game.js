@@ -13,7 +13,7 @@ var theGame = function(game){
 
 theGame.prototype = {
     
-    createLeaf: function(game) {
+    createLeaf: function(game) {   //luodaan lehti ja annetaan ominaisuudet
         var leaf = leaves.create(Math.random() * 640, 1, 'leaf');
         leaf.body.collideWorldBounds = true;
         leaf.body.gravity.y = 6;
@@ -21,7 +21,7 @@ theGame.prototype = {
         leaf.body.onWorldBounds.add(this.missLeaf, this);
     },
     
-    createEnemy: function(game) {
+    createEnemy: function(game) {   //luodaan enemy ja annetaan ominaisuudet
     var enemy = enemies.create(0, Math.random() * 536, 'enemy');
         enemy.body.bounce.y = 1.0;
         enemy.body.bounce.x = 1.0;
@@ -33,7 +33,7 @@ theGame.prototype = {
         enemy.body.velocity.y = ((Math.random() * 10) + 1) * 17;
     },
     
-    create: function() {
+    create: function() { 
         this.score = 0;
         this.missed = 0;
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -86,12 +86,22 @@ theGame.prototype = {
         player.body.velocity.x = 0;
 
         if (cursors.left.isDown) {
-            player.body.velocity.x = -150;
+            player.body.velocity.x = -300;
             player.animations.play('left');
-        } else if (cursors.right.isDown) {
-            player.body.velocity.x = 150;
+        }
+         if (cursors.down.isDown  ) {
+            player.body.velocity.y += 30;
+            
+        }
+        
+        
+        
+        else if (cursors.right.isDown) {
+            player.body.velocity.x = 300;
             player.animations.play('right');
-        } else {
+            
+        }
+        else {
             player.animations.stop();
         }
 
